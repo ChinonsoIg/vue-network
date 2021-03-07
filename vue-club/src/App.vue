@@ -1,11 +1,11 @@
 <template>
   <div>
-    <UpcomingEvents />
+    <Notifications />
   </div>
 </template>
 
 <script>
-import UpcomingEvents from "./pages/UpcomingEvents.vue";
+import Notifications from "./pages/Notifications.vue";
 
 // import Follow from "./components/Follow.vue";
 
@@ -14,7 +14,7 @@ import UpcomingEvents from "./pages/UpcomingEvents.vue";
 export default {
   name: 'App',
   components: {
-    UpcomingEvents
+    Notifications
   }
 }
 </script>

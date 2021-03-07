@@ -10,7 +10,7 @@
       <div class="events-subgrid">
         <div class="d-flex justify-content-between">
           <p>Time</p>
-          <p><i class="bi bi-bell menu-item"></i></p>
+          <p><i class="bi bi-bell"></i></p>
         </div>
         <p>Event name</p>
         <p>Host name</p>
@@ -20,7 +20,7 @@
       <div class="events-subgrid">
         <div class="d-flex justify-content-between">
           <p>Time</p>
-          <p>Reminder</p>
+          <p><i class="bi bi-bell"></i></p>
         </div>
         <p>Event name</p>
         <p>Host name</p>
