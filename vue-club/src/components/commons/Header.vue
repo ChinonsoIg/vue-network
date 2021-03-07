@@ -1,5 +1,5 @@
 <template>
-  <div id="section1" class="py-1 mb-5 menubar">
+  <div id="section1" class="py-1 mb-3 menubar">
       <div class="flexleft">
         <i class="bi bi-person-plus-fill menu-item"></i>
       </div>
@@ -14,7 +14,7 @@
 
 <script>
   export default {
-    name: 'HelloWorld',
+    name: 'Header',
     // props: {
     //   msg: String
     // }
@@ -38,12 +38,12 @@
 .flexleft {
   /* justify-self: flex-start; */
   padding: 0 10px;
-  width: 65%;
+  width: 60%;
 }
 
 .flexright {
   /* justify-self: flex-end; */
-  width: 35%;
+  width: 40%;
   display: flex;
   flex-flow: row nowrap;
   justify-content: space-between;

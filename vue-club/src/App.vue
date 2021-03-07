@@ -1,20 +1,20 @@
 <template>
   <div>
-    <Follow />
+    <UpcomingEvents />
   </div>
 </template>
 
 <script>
-// import Header from "./components/Header.vue";
-// import SearchBar from "./components/SearchBar.vue";
-// import RoomsList from "./components/RoomsList";
+import UpcomingEvents from "./pages/UpcomingEvents.vue";
 
-import Follow from "./components/Follow.vue";
+// import Follow from "./components/Follow.vue";
+
+// import AddEvent from "./components/AddEvent.vue";
 
 export default {
   name: 'App',
   components: {
-    Follow
+    UpcomingEvents
   }
 }
 </script>
