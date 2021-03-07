@@ -1,11 +1,11 @@
 <template>
   <div>
-    <Notifications />
+    <Profile />
   </div>
 </template>
 
 <script>
-import Notifications from "./pages/Notifications.vue";
+import Profile from "./pages/Profile.vue";
 
 // import Follow from "./components/Follow.vue";
 
@@ -14,7 +14,7 @@ import Notifications from "./pages/Notifications.vue";
 export default {
   name: 'App',
   components: {
-    Notifications
+    Profile
   }
 }
 </script>
