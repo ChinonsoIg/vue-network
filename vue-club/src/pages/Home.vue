@@ -1,8 +1,7 @@
 <template>
   <div>
-    <Header/>
     <SearchBar/>
-    <div id="section3" class="my-3 rooms-grid">
+    <div id="section" class="my-3 rooms-grid">
 
       <div class="card rooms-subgrid">
         <div class="card-body">
@@ -14,12 +13,12 @@
               <p class="card-text">Room user 1</p>
               <p class="card-text">Room user 2</p>
               <p class="card-text">Room user 3</p>
-              <a href="#" class="card-link link">
+              <a href="#" class="card-link link-pri-colour">
                 <!-- No of persons in the room -->
                 28 
                 <i class="bi bi-person-fill"></i>
               </a>
-              <a href="#" class="card-link link">
+              <a href="#" class="card-link link link-pri-colour">
                 <!-- No of people on stage -->
                 18
                 <i class="bi bi-chat-dots"></i>
@@ -39,12 +38,12 @@
               <p class="card-text">Room user 1</p>
               <p class="card-text">Room user 2</p>
               <p class="card-text">Room user 3</p>
-              <a href="#" class="card-link link">
+              <a href="#" class="card-link link link-pri-colour">
                 <!-- No of persons in the room -->
                 120 
                 <i class="bi bi-person-fill"></i>
               </a>
-              <a href="#" class="card-link link">
+              <a href="#" class="card-link link link-pri-colour">
                 <!-- No of people on stage -->
                 25
                 <i class="bi bi-chat-dots"></i>
@@ -64,12 +63,12 @@
               <p class="card-text">Room user 1</p>
               <p class="card-text">Room user 2</p>
               <p class="card-text">Room user 3</p>
-              <a href="#" class="card-link link">
+              <a href="#" class="card-link link link-pri-colour">
                 <!-- No of persons in the room -->
                 25
                 <i class="bi bi-person-fill"></i>
               </a>
-              <a href="#" class="card-link link">
+              <a href="#" class="card-link link link-pri-colour">
                 <!-- No of people on stage -->
                 14
                 <i class="bi bi-chat-dots"></i>
@@ -89,12 +88,12 @@
               <p class="card-text">Room user 1</p>
               <p class="card-text">Room user 2</p>
               <p class="card-text">Room user 3</p>
-              <a href="#" class="card-link link">
+              <a href="#" class="card-link link link-pri-colour">
                 <!-- No of persons in the room -->
                 105 
                 <i class="bi bi-person-fill"></i>
               </a>
-              <a href="#" class="card-link link">
+              <a href="#" class="card-link link link-pri-colour">
                 <!-- No of people on stage -->
                 48
                 <i class="bi bi-chat-dots"></i>
@@ -105,7 +104,7 @@
       </div>
 
       <div class="float-button">
-        <button type="button" class="btn m-3">
+        <button type="button" class="m-3 bg-pri-colour">
           <i class="bi bi-plus"></i>
           Start a room
         </button>
@@ -115,12 +114,10 @@
 </template>
 
 <script>
-import Header from "../components/commons/Header.vue";
 import SearchBar from "../components/commons/SearchBar.vue";
   export default {
-    name: 'HomePage',
+    name: 'Home',
     components: {
-      Header,
       SearchBar,
     }
     // props: {
@@ -130,7 +127,6 @@ import SearchBar from "../components/commons/SearchBar.vue";
 </script>
 
 <style scoped>
-/* ------ section3 ------ */
 .rooms-grid {
   display: flex;
   flex-flow: row wrap;
@@ -141,7 +137,6 @@ import SearchBar from "../components/commons/SearchBar.vue";
 .rooms-subgrid {
   width: 48%;
   margin: 10px 0;
-  /* height: auto; */
   justify-self: center;
   align-self: center;
   border-radius: 15px;
@@ -150,43 +145,39 @@ import SearchBar from "../components/commons/SearchBar.vue";
   box-shadow: 0 8px 6px -6px #777;
 }
 
-.link {
-  color: rgba(141, 103, 248, 0.7);
-  text-decoration: none;
+@media (max-width: 768px) {
+  .rooms-grid {
+    display: flex;
+    flex-flow: column;
+    justify-content: space-between;
+    align-items: center;
+  }
+  .rooms-subgrid {
+    width: 100%;
+    margin: 10px 0;
+    justify-self: center;
+    align-self: center;
+    border-radius: 15px;
+    -webkit-box-shadow: 0 8px 6px -6px #777;
+    -moz-box-shadow: 0 8px 6px -6px #777;
+    box-shadow: 0 8px 6px -6px #777;
+  }
 }
 
-.rooms-grid {
-  display: flex;
-  flex-flow: column;
-  justify-content: space-between;
-  align-items: center;
-}
-.rooms-subgrid {
-  width: 100%;
-  margin: 10px 0;
-  justify-self: center;
-  align-self: center;
-  border-radius: 15px;
-  -webkit-box-shadow: 0 8px 6px -6px #777;
-  -moz-box-shadow: 0 8px 6px -6px #777;
-  box-shadow: 0 8px 6px -6px #777;
-}
-
-
-
-
-/* ------ section4 ------ */
 .float-button {
   position: fixed;
   bottom: 5%;
   right: 10%;  
 }
 
-.float-button > :first-child {
+.float-button > button {
   border-radius: 15px;
-  color: white;
   font-size: 1.5rem;
-  background-color: #8d67f8;
-  /* background-color:rgba(102, 0, 128, 1); */
 }
+
+/* .float-button > button:hover {
+  border-radius: 15px;
+  font-size: 1.5rem;
+} */
+
 </style>

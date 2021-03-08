@@ -1,6 +1,5 @@
 <template>
   <div>
-    <Header />
     <p>ACTIVITY</p>
     <div class="d-flex flex-column justify-content-between">
       <div class="d-flex flex-row justify-content-between align-items-center my-2">
@@ -31,12 +30,8 @@
 </template>
 
 <script>
-import Header from "../components/commons/Header.vue";
 export default {
   name: "Notifications",
-  components: {
-    Header,
-  }
 }
 </script>
 

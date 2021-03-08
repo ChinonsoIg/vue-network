@@ -1,6 +1,5 @@
 <template>
   <div>
-    <Header />
     <div class="profile-grid">
       <div class="d-flex flex-column justify-content-between my-2 profile-subgrid">
         <img src="../assets/xps-2.jpg" alt="" class="border rounded-circle">
@@ -24,12 +23,8 @@
 </template>
 
 <script>
-import Header from "../components/commons/Header";
 export default {
   name: "Profile",
-  components: {
-    Header
-  }
 }
 </script>
 

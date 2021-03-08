@@ -1,13 +1,24 @@
 <template>
   <div id="section1" class="py-1 mb-3 menubar">
       <div class="flexleft">
-        <i class="bi bi-person-plus-fill menu-item"></i>
+        <router-link to="/">
+          <i class="bi bi-person-plus-fill menu-item font-pri-colour"></i>
+        </router-link>
       </div>
       <div class="flexright">
-        <span><i class="bi bi-envelope-open menu-item"></i></span>
-        <span><i class="bi bi-calendar3 menu-item"></i></span>
-        <span><i class="bi bi-bell menu-item"></i></span>
-        <span><i class="bi bi-person-circle menu-item"></i></span>
+        <router-link to="/invites">
+          <span><i class="bi bi-envelope-open menu-item font-pri-colour"></i></span>
+        </router-link>
+        <router-link to="/events">
+          <span><i class="bi bi-calendar3 menu-item font-pri-colour"></i></span>
+        </router-link>
+        <router-link to="/notifications">
+          <span><i class="bi bi-bell menu-item font-pri-colour"></i></span>
+        </router-link>
+        <router-link to="profile">
+          <span><i class="bi bi-person-circle menu-item font-pri-colour"></i></span>
+        </router-link>
+
       </div>
     </div>
 </template>
@@ -15,9 +26,6 @@
 <script>
   export default {
     name: 'Header',
-    // props: {
-    //   msg: String
-    // }
   }
 </script>
 
@@ -27,23 +35,19 @@
   display: flex;
   flex-flow: row nowrap;
   justify-content: space-between;
-  /* align-items: center; */
 }
 
 .menu-item {
-  font-size: 24px; 
-  color: #8d67f8;
+  font-size: 28px;
 }
 
 .flexleft {
-  /* justify-self: flex-start; */
   padding: 0 10px;
-  width: 60%;
+  width: 65%;
 }
 
 .flexright {
-  /* justify-self: flex-end; */
-  width: 40%;
+  width: 35%;
   display: flex;
   flex-flow: row nowrap;
   justify-content: space-between;

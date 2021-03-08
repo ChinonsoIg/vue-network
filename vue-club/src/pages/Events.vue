@@ -1,16 +1,16 @@
 <template>
   <div>
-    <Header />
-    <hr />
     <div class="d-flex justify-content-between">
       <p>UPCOMING ROOM EVENTS</p>
-      <button>Add event</button>
+      <router-link to="/events/add">
+        <button class="bg-pri-colour">Add event</button>
+      </router-link>
     </div>
     <div class="events-grid my-2">
       <div class="events-subgrid">
         <div class="d-flex justify-content-between">
           <p>Time</p>
-          <p><i class="bi bi-bell"></i></p>
+          <p><i class="bi bi-bell font-pri-colour"></i></p>
         </div>
         <p>Event name</p>
         <p>Host name</p>
@@ -20,7 +20,7 @@
       <div class="events-subgrid">
         <div class="d-flex justify-content-between">
           <p>Time</p>
-          <p><i class="bi bi-bell"></i></p>
+          <p><i class="bi bi-bell font-pri-colour"></i></p>
         </div>
         <p>Event name</p>
         <p>Host name</p>
@@ -32,12 +32,8 @@
 </template>
 
 <script>
-import Header from "../components/commons/Header.vue";
 export default {
-  name: "UpcomingEvents",
-  components: {
-    Header,
-  }
+  name: "Events",
 }
 </script>
 
@@ -64,22 +60,19 @@ export default {
 }
 
 button {
-  background-color: #b8a2f7;
+  /* background-color: #b8a2f7; */
   /* opacity: 1; */
-  color: white;
+  /* color: white; */
   border: none;
-  border-radius: 5px;
+  padding: 10px;
+  border-radius: 15px;
 }
 
 button:hover {
-  background-color: #8d67f8;
-  color: white;
+  /* background-color: #8d67f8;
+  color: white; */
   /* border: none; */
-  border-radius: 5px;
-}
-
-.bi {
-  color: #8d67f8;
+  /* border-radius: 15px; */
 }
 
 @media (max-width: 768px) {

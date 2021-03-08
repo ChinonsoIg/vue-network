@@ -1,9 +1,11 @@
 <template>
   <div class="py-3">
     <div class="section-one">
-      <button class="btn-danger rounded">Cancel</button>
+      <router-link to="/events">
+        <button class="danger">Cancel</button>
+      </router-link>
       <p>NEW EVENT</p>
-      <button>Publish</button>
+      <button class="bg-pri-colour">Publish</button>
     </div>
     <div class="section-two my-3 py-2">
       <input type="text" name="event-name" id="" placeholder="Event name">
@@ -40,9 +42,9 @@ export default {
   align-content: center;
 }
 
-.section-one button:last-child {
+/* .section-one button:last-child {
   background-color: #8d67f8;
-  /* opacity: 1; */
+
   color: white;
   border: none;
   border-radius: 5px;
@@ -51,9 +53,8 @@ export default {
 .section-one button:last-child:hover {
   background-color: #b8a2f7;
   color: white;
-  /* border: none; */
   border-radius: 5px;
-}
+} */
 
 .section-two {
   display: flex;

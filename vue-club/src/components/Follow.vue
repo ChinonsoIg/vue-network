@@ -1,6 +1,5 @@
 <template>
   <div>
-    <Header />
     <h1 class="text-center pt-3">FIND PEOPLE TO FOLLOW</h1>
     <SearchBar />
 
@@ -51,7 +50,6 @@
 
 <script>
 import SearchBar from "./commons/SearchBar.vue";
-import {  } from "./commons/H";
 
 export default {
   name: 'Follow',
