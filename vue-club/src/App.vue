@@ -50,18 +50,20 @@ button:hover {
 
 .bg-pri-colour {
   background-color: rgb(141, 103, 248);
+  /* background-color: gold; */
 }
 
 .bg-pri-colour:hover {
   opacity: 0.8;
 }
 
-.font-pri-colour {
+/* .font-pri-colour {
   color: rgb(141, 103, 248);
-}
+} */
 
-.link-pri-colour {
+.link-pri-colour, .font-pri-colour {
   color: rgb(141, 103, 248);
+  /* color: goldenrod; */
   text-decoration: none;
 }
 

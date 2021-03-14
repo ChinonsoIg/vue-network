@@ -55,10 +55,13 @@
 
       <div class="card rooms-subgrid">
         <div class="card-body">
-          <h5 class="card-title">Club Name</h5>
-          <h6 class="card-subtitle mb-2 text-muted">Meeting Title/Purpose</h6>
+          <router-link to="/room">
+            <h5 class="card-title">Club Name</h5>
+            <h6 class="card-subtitle mb-2 text-muted">Meeting Title/Purpose</h6>
+          </router-link>
+          
           <div class="rooms-flex">
-            <img src="" alt="Avatar of room users">
+            <img src="../assets/logo.png" alt="Avatar of room users" class="border rounded-circle">
             <div>
               <p class="card-text">Room user 1</p>
               <p class="card-text">Room user 2</p>
@@ -175,9 +178,8 @@ import SearchBar from "../components/commons/SearchBar.vue";
   font-size: 1.5rem;
 }
 
-/* .float-button > button:hover {
-  border-radius: 15px;
-  font-size: 1.5rem;
-} */
-
+img {
+  width: 80px;
+  height: 80px;
+}
 </style>
