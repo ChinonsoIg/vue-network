@@ -21,7 +21,7 @@
             </div>
 
             <button type="submit" class="bg-pri-colour">Log in</button>
-          <!-- </fieldset> -->
+            
         </form>
         
         <p>Don't have an account? <router-link to="/signup">Sign up</router-link></p>

@@ -5,8 +5,11 @@
 
       <div class="card rooms-subgrid">
         <div class="card-body">
-          <h5 class="card-title">Club Name</h5>
-          <h6 class="card-subtitle mb-2 text-muted">Meeting Title/Purpose</h6>
+          <router-link to="/room">
+            <h5 class="card-title">Club Name</h5>
+            <h6 class="card-subtitle mb-2 text-muted">Meeting Title/Purpose</h6>
+          </router-link>
+
           <div class="rooms-flex">
             <img src="" alt="Avatar of room users">
             <div>
@@ -30,8 +33,11 @@
 
       <div class="card rooms-subgrid">
         <div class="card-body">
-          <h5 class="card-title">Club Name</h5>
-          <h6 class="card-subtitle mb-2 text-muted">Meeting Title/Purpose</h6>
+          <router-link to="/room">
+            <h5 class="card-title">Club Name</h5>
+            <h6 class="card-subtitle mb-2 text-muted">Meeting Title/Purpose</h6>
+          </router-link>
+
           <div class="rooms-flex">
             <img src="" alt="Avatar of room users">
             <div>
@@ -83,8 +89,11 @@
 
       <div class="card rooms-subgrid">
         <div class="card-body">
-          <h5 class="card-title">Club Name</h5>
-          <h6 class="card-subtitle mb-2 text-muted">Meeting Title/Purpose</h6>
+          <router-link to="/room">
+            <h5 class="card-title">Club Name</h5>
+            <h6 class="card-subtitle mb-2 text-muted">Meeting Title/Purpose</h6>
+          </router-link>
+
           <div class="rooms-flex">
             <img src="" alt="Avatar of room users">
             <div>
@@ -181,5 +190,8 @@ import SearchBar from "../components/commons/SearchBar.vue";
 img {
   width: 80px;
   height: 80px;
+}
+.link {
+  text-decoration: none;
 }
 </style>

@@ -9,6 +9,8 @@
 <script>
 import Header from "./components/commons/Header.vue";
 import Footer from "./components/commons/Footer.vue";
+// import SignIn from "./components/SignIn.vue";
+// import SignUp from "./components/SignUp.vue";
 
 export default {
   name: 'App',
